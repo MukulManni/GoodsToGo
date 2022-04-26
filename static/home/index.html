@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods To Go</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/x-icon" href="/static/home/android-chrome-512x512.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cf9f8006cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/home/style.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">GTG </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Goods to go.....</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav  flex-grow-1 ">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact us</a>
+                            </li>
+                        </ul>
+                        <a class="nav-link update"  href="#" ><img src="/static/home/grid.svg" alt="" style="width: 1.8rem;">
+                            Product</a>
+                    </div>
+                    <button class="signUp" onclick="window.location='/register';">Sign up</button>
+                </div>
+                
+        </nav>
+    </section>
+
+
+    <section  class="home">
+        <div class="row" id="home-div1" >
+            <div class=" col-lg-6 title-div py-4 w">
+                <h1 class="title" id="title">Book Truck & Part<br> Load Service</h1>
+            </div>
+
+            <div class="col-lg-6 search-div" id="searchBox">
+
+                <form class="searchBox">
+                    <div class="drive">
+
+                        <button class="drive-btn"><i class="fa-solid fa-truck fa-2x drive-icon"></i><br>
+                            book</button>
+                        <button class="drive-btn"><i class="fa-solid fa-wifi fa-2x drive-icon"></i><br>
+                            Drive or<br> deliver</button>
+
+                    </div>
+                    <h4 class="search-text">India’s 1st Online Booking Platform with Live Pricing</h4>
+                    <div class="searchBoxInnerWrap">
+
+                        <div class="locationBox "><input type="text" class="inputField" placeholder="Enter pickup city"
+                                value=""><i class="fa-solid fa-location-arrow loc-icon fa-2x" onclick="myFunction()" ></i>
+
+                        </div>
+                        <div class="locationBox "><input type="text" class="inputField" placeholder="Enter drop city"
+                                value="">
+                        </div>
+                        <button type="submit" class="submitBtn">Check price</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+       
+
+        
+        
+    </section>
+
+
+    <section id="about">
+        <div class="container-fluid about ">
+            <h1>GTG for business</h1>
+            <h3>Transform your way to move ur goods</h3>
+            <button type="button" class="btn btn-dark btn-lg">see how</button>
+
+        </div>
+    </section>
+
+    <section id="feature">
+
+
+        <div class="row">
+            <div class="feature-item col-lg-4">
+                <i class="fa-solid fa-circle-check icon fa-3x"></i>
+                <h3>Manage easily</h3>
+                <p>Account for all your past, present and future shipments in one place.</p>
+            </div>
+            <div class="feature-item col-lg-4">
+                <i class="fa-solid fa-location-dot icon fa-3x"></i>
+                <h3>Tracking </h3>
+                <p>Real time GPS tracking of in-progress orders anywhere, anytime.</p>
+            </div>
+            <div class="feature-item col-lg-4">
+                <i class="fa-solid fa-credit-card  icon fa-3x"></i>
+                <h3>Pay securely
+                </h3>
+                <p>Quick and hassle-free online payments are our thing. No hidden costs.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="else">
+        <div class="else-con">
+            <p>Transportation & Cargo Service Online</p>
+            <h1>Thousands of trucks at your fingertips.</h1>
+
+            <h6 class="else-h6">GTG is India’s pioneer web and app based online Transport Booking platform that connects
+                users to
+                Hire a Truck
+                with a
+                network of thousands Truck drivers for Quick and Prompt Goods Delivery Option, Our Transport Expertise
+                including
+                Full
+                TruckLoad, Part TruckLoad, Door to Door Parcel.</h6>
+            <img src="/static/home/OrderNow2.gif" alt="">
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="row">
+            <div class="col-6 footer-div">
+                <h5>© Copyright GOODS TO GO. All Rights Reserved</h5>
+                <h6>Designed by VIKASH</h6>
+            </div>
+            <div class="col-6 foot-container">
+                <i class="fa-brands fa-linkedin foot-icon fa-3x"></i>
+                <i class="fa-brands fa-instagram foot-icon fa-3x"></i>
+                <i class="fa-brands fa-facebook-square foot-icon fa-3x"></i>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    
+
+        <script src="/static/home/index.js"></script>
+
+    
+</body>
+
+</html>

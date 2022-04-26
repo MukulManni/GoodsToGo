@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignUp</title>
+    <link href="static/login/BootstrapCssa84b.css" rel="stylesheet" />
+
+    <link href="static/login/JqueryUICss7d72.css" rel="stylesheet" />
+
+    <link href="static/login/Content/JellyInputContent/main.css" rel="stylesheet" />
+
+    <script src="static/login/Jquerye5f2"></script>
+
+    <script src="static/login/JqueryValidateJs8725"></script>
+
+    <script src="static/login/JqueryUIJs7653"></script>
+
+    <script src="static/login/BootstrapJsc4f1"></script>
+
+    <style type="text/css">
+        .errorClass {
+            color: #FF0000;
+            /* red */
+        }
+
+        .white-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 3px;
+            /*margin-top: 10px;*/
+            height: 90vh;
+            overflow-y: auto;
+            padding-bottom: 50px;
+            overflow-x: hidden;
+        }
+
+        .main-wrapper {
+            height: 100vh;
+            overflow: hidden;
+            margin-left: -15px !important;
+            margin-right: -15px !important;
+        }
+
+        .input-validation-error span.field-validation-error {
+            display: table-cell;
+        }
+
+        .form-material .form-control {
+            background-color: rgba(0, 0, 0, 0);
+            background-position: center bottom, center calc(99%);
+            background-repeat: no-repeat;
+            background-size: 0 2px, 100% 1px;
+            padding: 0;
+            transition: background 0s ease-out 0s;
+        }
+
+        .form-material .form-control,
+        .form-material .form-control.focus,
+        .form-material .form-control:focus {
+            background-image: linear-gradient(#707cd2, #707cd2), linear-gradient(rgba(120, 130, 140, .13), rgba(120, 130, 140, .13));
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            float: none;
+        }
+
+        .form-material .form-control.focus,
+        .form-material .form-control:focus {
+            background-size: 100% 2px, 100% 1px;
+            outline: 0;
+            transition-duration: .3s;
+        }
+
+        .bg {
+            background: url(../Content/Images/truck.jpg) center center/cover no-repeat !important;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="main-wrapper">
+            <div class="row row-eq-height">
+                <div class="col-sm-8  hidden-xs" style="padding-right:0px">
+                    <img src="static/login/Content/Images/vtruck.jpg" style="height:100vh;" class="img-responsive" />
+                </div>
+                <div class="col-sm-4 col-xs-12" style="padding-left:0px ">
+                    <div class="white-box">
+                        <form Class="form-horizontal form-material" action="/register" method="post">
+                            <div class="form-group">
+                                <div class="col-md-12 row text-center">
+                                    <a href="/" class="text-center db"><img
+                                            src="static/login/Content/Images/vxpress-logo.png"
+                                            style="width:180px;height:65px;" alt="v-trans logo" /></a>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <input autocomplete="off" class="form-control input100" data-val="true"
+                                        data-val-length="Min. length must be 2 characters" data-val-length-max="50"
+                                        data-val-length-min="2" data-val-required="Please enter first name"
+                                        id="FirstName" maxlength="50" name="FirstName" type="text" value="" />
+                                    <span class="focus-input100" data-placeholder="First Name"></span>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="FirstName"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <input autocomplete="off" class="form-control input100" data-val="true"
+                                        data-val-length="Min. length must be 2 characters" data-val-length-max="50"
+                                        data-val-length-min="2" data-val-required="Please enter last name" id="LastName"
+                                        maxlength="50" name="LastName" type="text" value="" />
+                                    <span class="focus-input100" data-placeholder="Last Name"></span>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="LastName"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <input autocomplete="off" class="form-control input100" data-val="true"
+                                        data-val-email="Please enter valid email"
+                                        data-val-length="Min. length must be 6 characters" data-val-length-max="100"
+                                        data-val-length-min="6"
+                                        data-val-remote="This Email Id is already registered !!!"
+                                        data-val-remote-additionalfields="*.EmailId" data-val-remote-type="POST"
+                                        data-val-remote-url="/WebService/IsRequestEmailExists"
+                                        data-val-required="Please enter email" id="EmailId" maxlength="100"
+                                        name="EmailId" type="text" value="" />
+                                    <span class="focus-input100" data-placeholder="Business Email"></span>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="EmailId"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <input autocomplete="off" class="form-control input100" data-val="true"
+                                        data-val-length="Max length 10" data-val-length-max="10"
+                                        data-val-regex="Please enter valid mobile no"
+                                        data-val-regex-pattern="[6-9]\d{9}$"
+                                        data-val-remote="This Mobile Number is already registered !!!"
+                                        data-val-remote-additionalfields="*.MobileNo" data-val-remote-type="POST"
+                                        data-val-remote-url="/WebService/IsRequestMobileExists"
+                                        data-val-required="Please enter mobile no" id="MobileNo" maxlength="10"
+                                        name="MobileNo" type="text" value="" />
+                                    <span class="focus-input100" data-placeholder="Mobile"></span>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="MobileNo"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <select class="form-control" data-val="true"
+                                        data-val-number="The field StateId must be a number."
+                                        data-val-required="Please select State" id="StateId" name="StateId"
+                                        onchange="GetCities()">
+                                        <option value="">--Select State--</option>
+                                        <option value="11">ANDAMAN AND NICOBAR ISLANDS </option>
+                                        <option value="3">ANDHRA PRADESH</option>
+                                        <option value="21">ARUNACHAL PRADESH </option>
+                                        <option value="22">ASSAM </option>
+                                        <option value="23">BIHAR </option>
+                                        <option value="36">CHANDIGARH</option>
+                                        <option value="24">CHHATTISGARH </option>
+                                        <option value="37">DADRA NAGAR HAVELI UT</option>
+                                        <option value="8">DELHI</option>
+                                        <option value="16">GOA</option>
+                                        <option value="17">GUJARAT</option>
+                                        <option value="9">HARYANA</option>
+                                        <option value="10">HIMACHAL PRADESH</option>
+                                        <option value="25">JAMMU AND KASHMIR </option>
+                                        <option value="26">JHARKHAND </option>
+                                        <option value="1">KARNATAKA</option>
+                                        <option value="5">KERALA</option>
+                                        <option value="35">LAKSHADWEEP</option>
+                                        <option value="19">MADHYA PRADESH</option>
+                                        <option value="2">MAHARASHTRA</option>
+                                        <option value="27">MANIPUR </option>
+                                        <option value="28">MEGHALAYA </option>
+                                        <option value="29">MIZORAM </option>
+                                        <option value="30">NAGALAND </option>
+                                        <option value="31">ODISHA</option>
+                                        <option value="6">PUDUCHERRY</option>
+                                        <option value="7">PUNJAB</option>
+                                        <option value="18">RAJASTHAN</option>
+                                        <option value="32">SIKKIM </option>
+                                        <option value="4">TAMILNADU</option>
+                                        <option value="34">TELANGANA</option>
+                                        <option value="33">TRIPURA </option>
+                                        <option value="14">UTTAR PRADESH</option>
+                                        <option value="12">UTTARAKHAND</option>
+                                        <option value="13">WEST BENGAL</option>
+                                    </select>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="StateId"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <input autocomplete="off" class="form-control input100" data-val="true"
+                                        data-val-length="Min. length must be 8 characters" data-val-length-max="50"
+                                        data-val-length-min="8" data-val-required="Please enter Password"
+                                        id="password" maxlength="50" name="password" type="password" value="" />
+                                    <span class="focus-input100" data-placeholder="Password"></span>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="password"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-md-6 wrap-input100">
+                                    <input autocomplete="off" class="form-control input100" data-val="true"
+                                        data-val-length="Min. length must be 8 characters" data-val-length-max="50"
+                                        data-val-length-min="8" data-val-required="Please enter Password"
+                                        id="repass" maxlength="50" name="repass" type="password" value="" />
+                                    <span class="focus-input100" data-placeholder="Re-type Password"></span>
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="password"
+                                        data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div id="DivError" class="text-capitalize font-weight-bold text-left"
+                                    style="color: red">
+
+                                </div>
+
+                            </div>
+                            <b style="color: red;">{{ .error}}</b>
+                            <div class="form-group text-center m-t-20">
+                                <div class="col-xs-12">
+                                    <button
+                                        class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light"
+                                        type="submit">Sign Up</button>
+                                </div>
+                            </div>
+                            <div class="form-group m-b-0">
+                                <div class="col-sm-12 text-center">
+                                    <p>
+                                        Already have an account?
+                                        <a href="/login">Sign In</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="static/login/Content/JellyInputContent/main.js"></script>

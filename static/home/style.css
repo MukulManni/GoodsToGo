@@ -1,0 +1,292 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    font-weight: 500;
+    padding: 0 0.6rem;
+}
+
+.update {
+    margin-right: 12rem;
+    color: rgb(48, 45, 45);
+}
+
+
+.nav-icon {
+    all: initial;
+}
+
+.nav-link {
+    font-size: large;
+}
+
+
+.navbar-brand {
+    font-size: 3rem;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+.signUp {
+    margin-right: 5rem;
+    border-radius: 20px;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    border-style: none;
+    position: absolute;
+    right: 2rem
+}
+
+
+
+.w {
+    width: 25%;
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10%;
+
+}
+
+
+
+.drive {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-evenly;
+
+    border-bottom-style: solid;
+    border-color: #fef8f8;
+    background-color: #fff9f9;
+
+}
+
+.drive-btn {
+    all: initial;
+    width: 15%;
+    padding-top: 2rem;
+    text-align: center;
+    height: 5rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative;
+
+
+}
+
+.drive-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    background-color: rgb(181, 181, 237);
+}
+
+.drive-btn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+.drive-icon {
+    padding-bottom: 1rem;
+}
+
+.locationBox {
+
+    background-color: rgba(255, 253, 253, 0.263);
+    position: relative;
+    height: 5.8rem;
+}
+
+.loc-icon {
+    position: absolute;
+    right: 5.5rem;
+    top: 1rem;
+    color: #a38585;
+    cursor: pointer;
+}
+
+.loc-icon:hover {
+    color: #000000;
+}
+
+.search-text {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+.searchBox {
+
+    /* display: flex; */
+    text-align: center;
+    width: calc(100% - 1rem);
+    border-radius: 0.4rem;
+    box-shadow: 0px 23px 40px 0px rgb(150, 145, 145);
+    background-color: #ffffff;
+    margin: auto;
+    padding-bottom: 2rem;
+
+
+}
+
+
+
+.searchBox .submitBtn {
+    display: inline-block;
+    height: 3rem;
+    background-color: #000000;
+    color: #fbf4f4;
+    width: 30%;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+
+
+.inputField {
+    border: none;
+    font-size: 1.5rem;
+    height: 70%;
+    width: 80%;
+    background-color: rgb(238, 233, 233);
+
+}
+
+
+
+#about {
+    background: url("4k-empire-state-building-morning-new-york-skyscrapers.jpg");
+    background-size: 100%;
+    height: 35%;
+    width: 100%;
+    padding: 5rem;
+}
+
+#feature {
+
+    padding: 3rem 0;
+    text-align: center;
+
+}
+
+.feature-item {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.icon {
+    padding-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ab1919;
+}
+
+.else {
+    text-align: center;
+    color: #ffffff;
+    background-color: #d5e3f3;
+}
+
+
+.else-con {
+    padding: 4rem;
+    padding-bottom: 0;
+
+}
+
+.else-h6 {
+    width: 70%;
+    margin: auto;
+
+}
+
+.else-img {
+    color: #000000;
+
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+.footer-div {
+    padding-left: 5rem;
+    margin-top: 2rem;
+
+}
+
+.foot-container {
+    display: flex;
+    justify-content: end;
+}
+
+.foot-icon {
+
+    padding: 2rem 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .searchBox {
+        width: calc(80% - 1rem);
+
+    }
+
+    .title-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .w {
+        width: 100%;
+    }
+
+    .foot-icon {
+
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .searchBox {
+        width: calc(80% - 1rem);
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+    }
+
+    .searchBox .submitBtn {
+
+        width: 80%;
+
+    }
+
+
+}
+

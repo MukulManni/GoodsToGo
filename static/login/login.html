@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Goods To Go</title>
+
+    <link href="static/login/BootstrapCssa84b.css" rel="stylesheet" />
+
+
+    <link href="static/login/JqueryUICss7d72.css" rel="stylesheet" />
+
+    <link href="static/login/Content/Bootstrap/css/Slider.css" rel="stylesheet" />
+    <link href="static/login/Content/JellyInputContent/main.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .white-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+
+
+        .form-material .form-control {
+            background-color: rgba(0, 0, 0, 0);
+            background-position: center bottom, center calc(99%);
+            background-repeat: no-repeat;
+            background-size: 0 2px, 100% 1px;
+            padding: 0;
+            transition: background 0s ease-out 0s;
+        }
+
+        .form-material .form-control,
+        .form-material .form-control.focus,
+        .form-material .form-control:focus {
+            background-image: linear-gradient(#707cd2, #707cd2), linear-gradient(rgba(120, 130, 140, .13), rgba(120, 130, 140, .13));
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            float: none;
+        }
+
+        .form-material .form-control.focus,
+        .form-material .form-control:focus {
+            background-size: 100% 2px, 100% 1px;
+            outline: 0;
+            transition-duration: .3s;
+        }
+
+        .bg {
+            background: url(Content/Images/truck.jpg) center center/cover no-repeat !important;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+        }
+
+        .imgRes {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .no-close .ui-dialog-titlebar-close {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 row">
+                <div class="col-sm-8 hidden-xs">
+                    <div class="row">
+                        <img class="mySlides fade img-responsive" style="height:100vh; "
+                            src="static/login/Content/Images/vtruck.jpg">
+                        <img class="mySlides fade img-responsive" style="height:100vh; "
+                            src="static/login/Content/Images/airtrans.jpg">
+                        <img class="mySlides fade img-responsive" style="height:100vh; "
+                            src="static/login/Content/Images/vtruck1.jpg">
+                        <img class="mySlides fade img-responsive" style="height:100vh; "
+                            src="static/login/Content/Images/timemap.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="row">
+                        <div class="white-box">
+                            <div id="form1">
+                                <form Class="form-horizontal form-material" action="https://crm.vxpress.in/"
+                                    id="frmLogin" method="post">
+                                    <div class="form-group">
+                                        <div class="col-md-12 row text-center">
+                                            <a href="javascript:void(0)" class="text-center db"><img
+                                                    src="static/login/Content/Images/vxpress-logo.png"
+                                                    style="width:180px;height:65px;" alt="Home" /></a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="form-group m-t-40">
+                                        <div class="col-xs-12 wrap-input100">
+                                            <input autocomplete="off" class="form-control input100" data-val="true"
+                                                data-val-email="Please enter valid email"
+                                                data-val-required="Please enter user name" id="LoginEntity_UserName"
+                                                maxlength="100" name="LoginEntity.UserName" tabindex="1" type="text"
+                                                value="" />
+                                            <span class="focus-input100" data-placeholder="Email ID"></span>
+                                            <span class="field-validation-valid text-danger"
+                                                data-valmsg-for="LoginEntity.UserName" data-valmsg-replace="true"
+                                                style="float:left"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 wrap-input100">
+                                            <input autocomplete="off" class="form-control input100" data-val="true"
+                                                data-val-required="Please enter password" id="LoginEntity_Password"
+                                                maxlength="50" name="LoginEntity.Password" tabindex="2"
+                                                type="password" />
+                                            <span class="focus-input100" data-placeholder="Password"></span>
+                                            <span class="field-validation-valid text-danger"
+                                                data-valmsg-for="LoginEntity.Password" data-valmsg-replace="true"
+                                                style="float:left"></span>
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="col-sm-6 col-xs-12 text-left">
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <a id="lnkForgotPassword" href="javascript:void(0)"
+                                                class="text-dark pull-right"><i
+                                                    class="glyphicon glyphicon-lock m-r-5"></i> Forgot password ?</a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="form-group text-center m-t-20">
+                                        <div class="col-xs-12 text-danger">
+                                            <p class="Error"> </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center m-t-20">
+                                        <div class="col-xs-12">
+                                            <button id="btnLogin"
+                                                class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
+                                                tabindex="4" type="submit">Log In</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-b-0">
+                                        <div class="col-sm-12 text-center">
+                                            <p>
+                                                Don't have an account?
+
+                                                <a href="/register">Sign Up</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="form2">
+
+                                <form Class="form-horizontal" action="https://crm.vxpress.in/Login/ResetPassword"
+                                    id="frmResetPassword" method="post"><input name="__RequestVerificationToken"
+                                        type="hidden"
+                                        value="9ChzwEJZbvu5wOb48csFrfk_mPW6XD1YhzIc_nsTHf3AZ0-HvfdtJ2ztS78GAIN5IkhNYrsv6uL2TWcxL4o2XJJzakplt7_4ZsjtzQ0BOJY1" />
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <h3>Recover Password</h3>
+                                            <p class="text-muted">Enter your Email and instructions will be sent to you!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="col-xs-12">
+                                            <input class="form-control" data-val="true"
+                                                data-val-email="Please enter valid email"
+                                                data-val-remote="This Email Id is not registered !!!"
+                                                data-val-remote-additionalfields="*.EmailId" data-val-remote-type="POST"
+                                                data-val-remote-url="/WebService/IsRegisteredEmailExists"
+                                                data-val-required="Please enter Email Id"
+                                                id="ForgotPasswordEntity_EmailId" maxlength="100"
+                                                name="ForgotPasswordEntity.EmailId" placeholder="Email" type="text"
+                                                value="" />
+
+                                            <span class="field-validation-valid text-danger"
+                                                data-valmsg-for="ForgotPasswordEntity.EmailId"
+                                                data-valmsg-replace="true" style="float:left"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center m-t-20">
+                                        <div class="col-xs-12">
+                                            <button
+                                                class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
+                                                id="btnReset" type="submit">Reset</button>
+                                            <button
+                                                class="btn btn-danger btn-lg btn-block text-uppercase waves-effect waves-light"
+                                                id="btnCancelReset" type="button">Cancel</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="static/login/Jquerye5f2?v=rD9yxcIfC-_zwpaJ_9UPbUY1Niam5dFE8OFiugxkBeM1"></script>
+
+<script src="static/login/BootstrapJsc4f1?v=n-b1NjUTdUYMAkcbiWZLLzEiB_aiS2_-F-jAxVav7fc1"></script>
+
+<script src="static/login/JqueryValidateJs8725?v=IofIBLsM7srcOZlhaKSEfxudWiThHiXt6bKPUwekiW41"></script>
+
+<script src="static/login/JqueryUIJs7653?v=DtkYieMVd_lHdVUIY59c7eRHgEKv-tJC2gOnmZzSzwM1"></script>
+
+<script src="static/login/Content/JellyInputContent/main.js"></script>
+<script src="static/login/Views/Login/Script/Login.js"></script>
+
+
