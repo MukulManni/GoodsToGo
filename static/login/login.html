@@ -92,7 +92,7 @@
                     <div class="row">
                         <div class="white-box">
                             <div id="form1">
-                                <form Class="form-horizontal form-material" action="https://crm.vxpress.in/"
+                                <form Class="form-horizontal form-material" action="/login"
                                     id="frmLogin" method="post">
                                     <div class="form-group">
                                         <div class="col-md-12 row text-center">
@@ -107,11 +107,11 @@
                                             <input autocomplete="off" class="form-control input100" data-val="true"
                                                 data-val-email="Please enter valid email"
                                                 data-val-required="Please enter user name" id="LoginEntity_UserName"
-                                                maxlength="100" name="LoginEntity.UserName" tabindex="1" type="text"
+                                                maxlength="100" name="username" tabindex="1" type="text"
                                                 value="" />
                                             <span class="focus-input100" data-placeholder="Email ID"></span>
                                             <span class="field-validation-valid text-danger"
-                                                data-valmsg-for="LoginEntity.UserName" data-valmsg-replace="true"
+                                                data-valmsg-for="username" data-valmsg-replace="true"
                                                 style="float:left"></span>
 
                                         </div>
@@ -120,18 +120,19 @@
                                         <div class="col-xs-12 wrap-input100">
                                             <input autocomplete="off" class="form-control input100" data-val="true"
                                                 data-val-required="Please enter password" id="LoginEntity_Password"
-                                                maxlength="50" name="LoginEntity.Password" tabindex="2"
+                                                maxlength="50" name="password" tabindex="2"
                                                 type="password" />
                                             <span class="focus-input100" data-placeholder="Password"></span>
                                             <span class="field-validation-valid text-danger"
-                                                data-valmsg-for="LoginEntity.Password" data-valmsg-replace="true"
+                                                data-valmsg-for="password" data-valmsg-replace="true"
                                                 style="float:left"></span>
 
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <div class="col-sm-6 col-xs-12 text-left">
+                                            <span class="text-danget" style="color: red;">{{.error}}</span>
                                         </div>
                                         <div class="col-sm-12 col-xs-12">
                                             <a id="lnkForgotPassword" href="javascript:void(0)"
@@ -216,15 +217,11 @@
 </body>
 
 </html>
-<script src="static/login/Jquerye5f2?v=rD9yxcIfC-_zwpaJ_9UPbUY1Niam5dFE8OFiugxkBeM1"></script>
+<script src="static/login/Jquerye5f2"></script>
 
-<script src="static/login/BootstrapJsc4f1?v=n-b1NjUTdUYMAkcbiWZLLzEiB_aiS2_-F-jAxVav7fc1"></script>
+<script src="static/login/BootstrapJsc4f1"></script>
 
-<script src="static/login/JqueryValidateJs8725?v=IofIBLsM7srcOZlhaKSEfxudWiThHiXt6bKPUwekiW41"></script>
-
-<script src="static/login/JqueryUIJs7653?v=DtkYieMVd_lHdVUIY59c7eRHgEKv-tJC2gOnmZzSzwM1"></script>
+<script src="static/login/JqueryUIJs7653"></script>
 
 <script src="static/login/Content/JellyInputContent/main.js"></script>
 <script src="static/login/Views/Login/Script/Login.js"></script>
-
-

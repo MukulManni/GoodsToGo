@@ -51,7 +51,11 @@
                         <a class="nav-link update"  href="#" ><img src="/static/home/grid.svg" alt="" style="width: 1.8rem;">
                             Product</a>
                     </div>
+                    {{if .username}}
+                    <button class="signUp">{{ .username}}</button>
+                    {{else}}
                     <button class="signUp" onclick="window.location='/register';">Sign up</button>
+                    {{end}}
                 </div>
                 
         </nav>

@@ -17,6 +17,11 @@ type User struct {
 
 var userList = []User{{"admin", "admin", "admin@goodstogo.com", "9876543210", "1", "admin@123"}}
 
+const (
+	username = "user"
+	password = "pass"
+)
+
 func createUser(c *gin.Context) {
 	fname := c.PostForm("FirstName")
 	lname := c.PostForm("LastName")
