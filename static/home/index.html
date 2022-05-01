@@ -51,11 +51,9 @@
                         <a class="nav-link update"  href="#" ><img src="/static/home/grid.svg" alt="" style="width: 1.8rem;">
                             Product</a>
                     </div>
-                    {{if .username}}
-                    <button class="signUp">{{ .username}}</button>
-                    {{else}}
-                    <button class="signUp" onclick="window.location='/register';">Sign up</button>
-                    {{end}}
+                    
+                    <button class="signUp" onclick="window.location='/register';">{{.check}}</button>
+                    
                 </div>
                 
         </nav>
@@ -159,8 +157,8 @@
     <section class="footer">
         <div class="row">
             <div class="col-6 footer-div">
-                <h5>© Copyright GOODS TO GO. All Rights Reserved</h5>
-                <h6>Designed by VIKASH</h6>
+                <h6>© Copyright GOODS TO GO. All Rights Reserved</h6>
+                <h7>Designed by VIKASH</h7>
             </div>
             <div class="col-6 foot-container">
                 <i class="fa-brands fa-linkedin foot-icon fa-3x"></i>
